@@ -1,0 +1,29 @@
+.bookText {
+    color: purple;
+    font-family: fantasy ;
+    font-size: 1.5vw;
+    font-style: italic;
+    text-align: left;
+ }
+ 
+ .bookHeading {
+    color: #bef5d7;
+    font-size: 2vw;
+    text-align: center;
+    padding: 1vw;
+ }
+
+ .bookImages {
+    display: block;
+    border: 3px solid #bef5d7;
+    width: 150px;
+    height: auto;
+    margin: .5rem 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.bookSection {
+    background-color: black;
+}
