@@ -45,3 +45,7 @@
 .imageUpdates {
   object-fit: contain;
 }
+
+img{
+  width: 25vw;
+}

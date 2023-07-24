@@ -1,11 +1,11 @@
 const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+   let authorLink = "https://thecleaneatingcouple.com/about-us/";
+   let authorPhoto = "https://www.graceandvinestudios.com/wp-content/uploads/2021/02/clean-eating-couple-1-683x1024-1.jpg";
+   let authorName = "Liz - The Clean Eating Couple";
 
    return (
       <div>
-         <img src={authorPhoto} alt = "" style={{objectFit: "contain", borderRadius: "50%"}} />
+         <img src={authorPhoto} alt = "Picture of recipe author" style={{objectFit: "contain", borderRadius: "50%"}} />
          <div>
             <h3>{authorName}</h3>
             <a href={authorLink}></a> 
@@ -15,7 +15,7 @@ const RecipeAuthor = () => {
 }
 
 const RecipeIngredients = () => {
-   const ingredients = [];
+   const ingredients = ["3 cups spaghetti squash shredded", "2.5 cups shredded chicken","1/2 tablespoon olive oil", "1 egg", "1/2 teaspoon onion powder", "1/4 teaspoon pepper", "1/2 teaspoon garlic powder", "1/3 cup Franks Red Hot"];
    return(
       <div>
          <h3>Recipe Ingredients</h3>
@@ -25,6 +25,9 @@ const RecipeIngredients = () => {
             <li>{ingredients[2]}</li>
             <li>{ingredients[3]}</li>
             <li>{ingredients[4]}</li>
+            <li>{ingredients[5]}</li>
+            <li>{ingredients[6]}</li>
+            <li>{ingredients[7]}</li>
          </ul>
       </div>
    );
@@ -34,8 +37,9 @@ const RecipeDescription = () => {
    return (
       <div> 
          <div>
-            <h1></h1>
-            <p></p>
+            <h1>Healthy Buffalo Chicken Spaghetti Squash Casserole</h1>
+            <p>This Healthy Buffalo Chicken Spaghetti Squash Casserole is the perfect quick weeknight dinner. Low in carbs, but full on flavor. Plus it is gluten free and SO delicious!
+</p>
          </div>
          <div className="recipePhotoBlock">
             <RecipeIngredients />
@@ -47,7 +51,7 @@ const RecipeDescription = () => {
 
 const RecipePhoto = () => {
    return (
-      <img src="" alt="" className="imageUpdates"/>
+      <img src="https://thecleaneatingcouple.com/wp-content/uploads/2018/04/buffalo-chicken-spaghetti-squash-casserole-1-500x500.jpg" alt="Buffalo chicken casserole" className="imageUpdates"/>
    );
 }
 
